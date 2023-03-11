@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: slackNotify
-   username: <%= ENV['DB_USER'] %>
+  username: <%= ENV['DB_USER'] %>
   password: <%= ENV['DB_PASSWORD'] %>
   host: 127.0.0.1
   port: 5432
@@ -87,4 +87,4 @@ production:
   <<: *default
   database: slackNotify
   username: slackNotify
-  password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
+  password: <%= ENV["SLACKNOTIFY_DATABASE_PASSWORD"] %>

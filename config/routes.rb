@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  post '/notify', to: 'notifications#notify'
+   # Add a route to access my notifications controller
+    post 'api/v1/notify', to: 'api/v1/notifications#notify'
 end
